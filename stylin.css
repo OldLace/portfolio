@@ -1,0 +1,26 @@
+.flexboxin {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flexboxin div {
+	/*width: 50%;*/
+	padding: 60px;
+}
+
+.clearfix {
+	/*margin-right: 20px;*/
+    /*overflow: auto;*/
+}
+
+.jumbotron-billboard {
+    margin-bottom: 0px;
+    /*opacity: 0.2;*/
+    color: #fff;
+    background-image: url("./images/headerback.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /*overflow: hidden;*/
+}
