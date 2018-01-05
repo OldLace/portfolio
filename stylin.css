@@ -1,18 +1,8 @@
-/* .flexboxin {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
-} */
 
-/* .flexboxin div {
-	/*width: 50%;*/
-	/* padding: 60px; */
-/* } */
 
-/* .clearfix { */
-	/*margin-right: 20px;*/
-    /*overflow: auto;*/
-/* } */
+.clearfix {
+  margin-left: 20px;
+}
 
 .jumbotron-billboard {
     margin-bottom: 0px;
@@ -41,7 +31,7 @@ text-decoration: none;
 margin: 5px 2px;
 border-radius: 50%;
 }
-/*  .fa-instagram {  //Decided that I didn't really want to link to my Instagram account
+/*  .fa-instagram {
 background: #125688;
 color: white*/;
 
@@ -68,7 +58,8 @@ padding: 20px;
 
 #footer {
 /* float: right; */
-left:0px;
+    margin-top: 100px;
+left:40px;
 bottom:0px;
 /* height:50px; */
 width:100%;
@@ -85,6 +76,102 @@ width: 200px;
   /* display: flex 2; */
 }
 body {
+    background-color: ghostwhite;
   /* height: 800px; */
   /* width: 800px; */
+}
+
+.box_container {
+    margin-left: 250px;
+}
+.box {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 100px;
+    border: 0px solid #73AD21;
+    top: 50%;
+    left: 50%;
+    /*margin-left: -150px;*/
+    /*margin-top: -100px;*/
+}
+
+    .box:hover {
+        /*border-radius: 3px;*/
+        transform: rotate(350deg);
+    }
+
+#box1Img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background:url(./images/logos/rails.png) -0 0 no-repeat;
+
+#box2Img{
+    display:block;
+    /*width: 75%;*/
+    /*height: 75%;*/
+    /*background:url(./images/logos/rails.png) -0 0 no-repeat;*/
+
+.box3Img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background:url(./images/logos/rails.png) -0 0 no-repeat;
+}
+
+/*Modal*/
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.15);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #fff;
+    color: #444;
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
 }

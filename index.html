@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylin.css">
 	<div class="topdiv">
 	<div class="jumbotron jumbotron-billboard">
@@ -13,10 +16,14 @@
         <div class="row">
             <div class="header">
                 <h1>Paul Gelot</h1>
-                <p>Currently studying: JavaScript</p>
-                <!-- <a href="#" class="btn btn-success btn-lg">Portfolio Coming Soon!</a> -->
+                <p>Junior Systems Engineer</p>
               <div>
-                <input type="button" class="btn btn-info" value="View Resume" onclick="location.href = 'resume.pdf';">
+                <input type="button" class="btn btn-success" value="View Resume" onclick="location.href = 'resume.pdf';">
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">About Me</button>
+
+
+                  <!--<a class="btn" href="#open-modal">sic CSS-Only Modal</a>-->
               </div>
             </div>
         </div>
@@ -24,13 +31,51 @@
 </div>
 </head>
 <div class="clearfix">
-	<div id="div1" id="quote"><h4>Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it. <p>~ Bruce Lee</p></h4></div>
-	<div id="div2"><img src="./images/nice_young_man.jpg"></div>
+	<!--<div id="div1" id="quote"><h5>Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it. <p>~ Bruce Lee</p></h5></div>-->
+    <!--<p>This page is currently under construction and will eventually serve as a portfolio of sorts</p>-->
+	<!--<div id="div2"><img src="./images/nice_young_man.jpg"></div>-->
+</div>
+<div>
+<div  id="box_container">
+    <div class="box"  id="box1">
+        <a href="https://github.com/OldLace/Focus-Group">Focus Group: A React App</a>
+        <a href="https://github.com/OldLace/Focus-Group"><img class="box2Img" src="./images/logos/rails.png" height="200" width="220"></a>
+        <!--<a href="https://github.com/OldLace/news-app">A Ruby on Rails News App<span id="box1Img"></span></a>-->
+        <!--<a href="https://github.com/OldLace/news-app"></a>-->
+    </div>
+    <div class="box" id="box2">
+        <!--<a href="https://github.com/OldLace/Focus-Group"><span id="box2Img"></span></a>-->
+       <a href="https://github.com/OldLace/Focus-Group">Focus Group: A React App</a>
+        <a href="https://github.com/OldLace/Focus-Group"><img class="box2Img" src="./images/logos/react1.png" height="200" width="220"></a>
 
-<body>
+    </div>
+    <div class="box" id="box3">
+        <a href="https://github.com/OldLace/contacts-organizer">A Rails Contacts Organizer<span class="box3Img"></span></a>
+        <a href="https://github.com/OldLace/contacts-organizer"><img class="box3Img" src="./images/logos/ruby.jpg" height="200" width="220"></a>
+    </div>
+</div>
+</div>
   <!-- <input type="button" class="btn btn-info" value="View Resume" onclick="location.href = 'resume.pdf';"> -->
 </body>
-  </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About Me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hello!</p><p>I am an IT Administrator with scripting and development skills. Through my experience, I have gained an interested in DevOps and Systems Engineering.</p>
+                        <p>I drink tea, I play video games, and my current professional goal is to gain mastery in Ubuntu Linux.</p>
+                        <p>Note: This is the version 1.0 of a page that is <em>always</em>under construction. I'm working on deploying my apps via AWS and touching up the styling.</p>
+                    </div>
+
+
 	<div id="footer">
 		<div class="socialbuttons">
 			<a href="https://www.linkedin.com/in/paulgelot/" class="fa fa-linkedin"></a>
